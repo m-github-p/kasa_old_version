@@ -1,0 +1,143 @@
+.apartments__article__first {
+	min-width: 70%;
+}
+
+.apartments__article__second {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(1, 1fr);
+}
+
+.apartments__div__first {
+	align-items: center;
+	display: flex;
+	grid-gap: 5%;
+	justify-content: flex-end;
+	margin: auto;
+	min-width: 100%;
+}
+
+.apartments__div__second {
+	padding-top: 5px;
+	text-align: end;
+}
+
+.apartments__img {
+	border-radius: 50%;
+	height: 64px;
+	min-width: 64px;
+}
+
+.apartments__p {
+	text-align: end;
+	width: 100px;
+	word-spacing: 20px;
+}
+
+.apartments__section__first {
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	margin: auto;
+	margin-bottom: 30px;
+	width: 95%;
+}
+
+.apartments__section__first h1 {
+	font-size: 36px;
+	font-weight: lighter;
+}
+
+.apartments__section__first p {
+	color: #FF6060;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.apartments__section__second {
+	align-items: start;
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(2, 1fr);
+	margin: auto;
+	width: 95%;
+}
+
+.apartments__section__second p {
+	font-size: 18px;
+}
+
+.apartments__section__second ul {
+	font-size: 18px;
+}
+
+.apartments__section__second .dropdown__article { 
+	margin-bottom: 0;
+	margin-top: 0;
+	width: 100%;
+}
+
+@media screen and (max-width: 768px){
+	.apartments__article__first {
+		display: grid;
+		gap: 10px;
+		grid-template-columns: repeat (1, 1fr);
+	}
+	.apartments__article__second {
+		align-items: center;
+		display: grid;
+		grid-template-columns: 1fr, 1fr;
+	}
+	.apartments__div__first {
+		grid-column-start: 2;
+		margin-left: -7px;
+	}
+	.apartments__div__second {
+		grid-column-start: 1;
+		grid-row: 1;
+		text-align: start;
+		width: 150px;
+	}
+	.apartments__img {
+		height: 32px;
+		min-width: 32px;
+	}
+	.apartments__p {
+		font-size: 12px;
+	}
+	.apartments__section__first {
+		display: grid;
+		gap: 30px;
+		grid-template-columns: 1fr;
+		margin: auto;
+		margin-bottom: 40px;
+		width: 95%;
+	}
+	.apartments__section__first h1 {
+		font-size: 18px;
+	}
+	.apartments__section__first p {
+		font-size: 14px;
+	}
+	.apartments__section__second {
+		display: grid;
+		gap: 30px;
+		grid-template-columns: 1fr;
+	}
+	.apartments__section__second p {
+		font-size: 12px;
+	}
+	.apartments__section__second ul {
+		font-size: 12px;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+	.apartments__section__first h1 {
+		font-size: 18px;
+	}
+	.apartments__article__second {
+		gap: unset;
+	}
+}

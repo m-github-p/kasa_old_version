@@ -1,0 +1,23 @@
+.tags__li {
+	background-color: #FF6060;
+	border-radius: 10px;
+	color: #FFF;
+	font-size: 14px;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+.tags__ul {
+	display: flex;
+	font-size: 14px;
+	justify-content: flex-start;
+	list-style: none;
+	width: 100%;
+}
+
+@media screen and (max-width: 768px){
+	.tags__li {
+		border-radius: 5px;
+		font-size: 10px;
+	}
+}

@@ -1,0 +1,95 @@
+.carousel__arrow {
+	display: flex;
+	height: 80px;
+	justify-content: space-between;
+	padding: 0px 25px;
+	position: absolute;
+	top: 42%;
+	width: 100%;
+	z-index: 1;
+}
+
+.carousel__arrow :hover {
+	background-color: #FF6060;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.carousel__arrow img {
+	height: 80px;
+	width: 80px;
+}
+
+.carousel__div__first {
+	background: linear-gradient(transparent, rgba(0,0,0,0.2));
+	border-radius: inherit;
+	height: inherit;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.carousel__div__second {
+	border-radius: inherit;
+	display: flex;
+	height: inherit;
+	transition: transform 0.3s ease-in-out;
+}
+
+.carousel__img {
+	border-radius: inherit;
+	min-width: 100%;
+	object-fit: cover;
+}
+
+.carousel__index {
+	color: #FFF;
+	font-size: 18px;
+	margin: auto;
+	position: absolute;
+	bottom: 5%;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+}
+
+.carousel__section {
+	border-radius: 25px;
+	height: 415px;
+	margin: auto;
+	margin-bottom: 40px;
+	overflow: hidden;
+	position: relative;
+	width: 95%;
+}
+
+@media screen and (max-width: 768px){
+	.carousel__arrow {
+		align-items: center;
+		padding: 15px;
+		top: 33%;
+	}
+	.carousel__arrow img {
+		height: 12px;
+		width: 12px;
+	}
+	.carousel__index {
+		font-size: 12px;
+	}
+	.carousel__section {
+		height: 255px;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+	.carousel__arrow {
+		align-items: center;
+		padding: 15px;
+		top: 38%;
+	}
+	.carousel__arrow img {
+		height: 18px;
+		width: 18px;
+	}
+}
