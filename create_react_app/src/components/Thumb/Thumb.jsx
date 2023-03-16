@@ -1,6 +1,10 @@
+//Import de la décoration de la card.
 import "../Thumb/Thumb.css";
 
+//Fonction de paramétrage de la card.
 function Thumb({title, cover}){
+
+	//Compilation de la card.
 	return(
 		<article className="thumb__article">
 			<img className="thumb__img" src={cover} alt={title}/>
@@ -10,4 +14,5 @@ function Thumb({title, cover}){
 	)
 }
 
+//Export de la card, pour un usage externe.
 export default Thumb;

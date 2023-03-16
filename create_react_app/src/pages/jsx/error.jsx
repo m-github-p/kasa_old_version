@@ -1,7 +1,13 @@
+//Import du lien de navigation depuis le React Router DOM.
 import {NavLink} from "react-router-dom";
+
+//Import de la décoration de la page "Erreur".
 import "../../pages/css/error.css";
 
+//Fonction de paramétrage de la page "Erreur".
 function Error(){
+
+	//Compilation de la page "Erreur".
 	return(
 		<main className="error__main">
 			<div className="error__div">
@@ -13,4 +19,5 @@ function Error(){
 	)
 }
 
+//Export de la page "Erreur", pour un usage externe.
 export default Error;

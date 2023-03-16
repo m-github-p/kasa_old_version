@@ -8,22 +8,10 @@
 }
 
 .home__h1 {
-	animation: home 0.7s ease-in-out;
 	color: #FFF;
 	font-size: 48px;
 	position: absolute;
 	z-index: 1;
-}
-
-@keyframes home {
-	0% {
-		opacity: 0;
-		transform: translateY(-100%);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0%);
-	}
 }
 
 .home__section__first {

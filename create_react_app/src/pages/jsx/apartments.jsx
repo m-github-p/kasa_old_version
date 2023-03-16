@@ -1,20 +1,30 @@
+//Import des useParams et de la navigation depuis React Router DOM.
 import {useParams, Navigate} from "react-router-dom";
+
+//Import des objets "logements".
 import logements from "../../logements.json";
 
+//Import des étoiles grise et orange.
 import GrayStar from "../../assets/gray_star.svg";
 import OrangeStar from "../../assets/orange_star.svg";
 
+//Import du carrousel, du menu déroulant, et des mots-clés (tags).
 import Carousel from "../../components/Carousel/Carousel";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import Tag from "../../components/Tag/Tag";
 
+//Import de la décoration de la page produit.
 import "../../pages/css/apartments.css";
 
+//Déclaration et initialisation de l'array "stars".
 const stars = [1,2,3,4,5];
 
+//Fonction de paramétrage de la page produit.
 function Apartments(){
 	const {productId} = useParams();
 	const apartment = logements.find((logement) => logement.id === productId);
+
+	//Si le logement existe, alors compilation de la page produit.
 	if(apartment){
 		return(
 			<main>
@@ -46,9 +56,12 @@ function Apartments(){
 			</main>
 		)
 	}
+
+	//Sinon, redirection vers la page d'erreur.
 	return(
 		<Navigate to="/404"></Navigate>
 	)
 }
 
+//Export de la page produit, pour un usage externe.
 export default Apartments;

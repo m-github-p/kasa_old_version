@@ -1,12 +1,20 @@
+//Import de l'useState depuis React.
 import {useState} from "react";
+
+//Import de la décoration du menu déroulant.
 import "./Dropdown.css";
+
+//Import de la flèche du menu déroulant.
 import DropdownArrow from "../../assets/dropdown_arrow.svg";
 
+//Fonction de paramétrage du menu déroulant.
 function Dropdown(props){
 	const [expand, setExpand] = useState(false);
 	function button(){
 		setExpand(!expand)
 	}
+
+	//Compilation du menu déroulant.
 	return(
 		<article className="dropdown__article">
 			<button className="dropdown__button" onClick={button}>
@@ -26,4 +34,5 @@ function Dropdown(props){
 	)
 }
 
+//Export du menu déroulant, pour un usage externe.
 export default Dropdown;

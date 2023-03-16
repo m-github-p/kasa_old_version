@@ -1,16 +1,30 @@
+//Import de l'useState depuis React.
 import {useState} from "react";
+
+//Import de la décoration du carrousel.
 import "../Carousel/Carousel.css";
+
+//Import des flèches gauche et droite.
 import LeftArrow from "../../assets/left_arrow.svg";
 import RightArrow from "../../assets/right_arrow.svg";
 
+//Fonction de sélection de diapositives.
 function Carousel({slides}){
+
+	//Image actuelle.
 	const [currentAsset, setCurrentAsset] = useState(0);
+
+	//Image précédente.
 	const previousAsset = () => {
 		setCurrentAsset (currentAsset !== 0 ? currentAsset - 1 : (slides.length-1));
 	};
+
+	//Image suivante.
 	const nextAsset = () => {
 		setCurrentAsset (currentAsset !== (slides.length - 1) ? currentAsset + 1 : 0);
 	};
+
+	//Compilation du carrousel.
 	return(
 		<section className="carousel__section">
 			<div className="carousel__div__first"></div>
@@ -30,4 +44,5 @@ function Carousel({slides}){
 	)
 }
 
+//Export du carrousel, pour un usage externe.
 export default Carousel;

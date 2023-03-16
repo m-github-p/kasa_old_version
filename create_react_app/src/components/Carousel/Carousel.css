@@ -10,8 +10,6 @@
 }
 
 .carousel__arrow :hover {
-	background-color: #FF6060;
-	border-radius: 50%;
 	cursor: pointer;
 }
 

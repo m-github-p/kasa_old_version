@@ -1,11 +1,22 @@
+//Import du lien de navigation depuis React Router DOM.
 import {NavLink} from "react-router-dom";
 
+//Import de la décoration de la page d'accueil.
 import "../../pages/css/home.css";
+
+//Import de la bannière de la page d'accueil.
 import HomeBanner from "../../assets/home_banner.png";
+
+//Imports des objets "logements".
 import logements from "../../logements.json";
+
+//Import de la card.
 import Thumb from "../../components/Thumb/Thumb";
 
+//Fonction de paramétrage de la page d'accueil.
 function Home(){
+
+	//Compilation de la page d'accueil.
 	return(
 		<main>
 			<section className="home__section__first">
@@ -26,4 +37,5 @@ function Home(){
 	)
 }
 
+//Export de la page d'accueil, pour un usage externe.
 export default Home;
