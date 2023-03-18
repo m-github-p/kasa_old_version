@@ -27,7 +27,7 @@ function Apartments(){
 	//Si le logement existe, alors compilation de la page produit.
 	if(apartment){
 		return(
-			<main>
+			<main className="apartments__main">
 				<Carousel slides = {apartment.pictures}></Carousel>
 				<section className="apartments__section__first">
 					<article className="apartments__article__first">

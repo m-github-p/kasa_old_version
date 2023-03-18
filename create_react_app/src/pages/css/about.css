@@ -45,7 +45,7 @@
 	}
 	.about__section__second {
 		border-radius: 5px;
-		margin: auto;
+		margin-bottom: 350px;
 		width: 94%;
 	}
 	.about__section__second p {
@@ -54,6 +54,10 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px){
+	.about__section__second {
+		margin-bottom: 350px;
+		width: 94%;
+	}
 	.about__section__second p {
 		font-size: 20px;
 	}
